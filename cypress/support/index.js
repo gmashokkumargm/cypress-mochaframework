@@ -14,13 +14,13 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
+import './commands';
 
-beforeEach(function(){
-    cy.visit(Cypress.env('url'))
-    cy.fixture('data').as('data')
-    cy.fixture('checkoutPageData').as('checkoutPageData')
-})
+beforeEach(function () {
+	cy.visit(Cypress.env('url'));
+	cy.fixture('data').as('data');
+	cy.fixture('checkoutPageData').as('checkoutPageData');
+});
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
